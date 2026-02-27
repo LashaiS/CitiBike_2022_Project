@@ -75,7 +75,7 @@ if page == "Introduction":
     st.markdown("### Data")
     st.write(
         """
-        Source: Citi Bike trip datat (2022) - https://s3.amazonaws.com/tripdata/index.html
+        Source: Citi Bike trip data (2022) - https://s3.amazonaws.com/tripdata/index.html
         """
     )
 
@@ -98,7 +98,7 @@ fig_bar_20 = px.bar(
     x="Number of Trips",
     y="Station Name",
     orientation='h',
-    title=" Top 20 Most Popular Citi Bike Station in New York - 2022",
+    title=" Top 20 Most Popular Citi Bike Stations in New York - 2022",
      color="Number of Trips",
     color_continuous_scale='Blues'
 )
@@ -111,7 +111,7 @@ st.plotly_chart(fig_bar_20, use_container_width=True)
 
 st.markdown('### Interpreation')
 st.write("""
-The chart highlights the 20 stations with the highest trip activity in 2022. The station with the highest volume are likely located in major transit hub, dense commercial areas, or popular destinations areas where the need for bikes is high. 
+The chart highlights the 20 stations with the highest trip activity in 2022. The stations with the highest volume are likely located in major transit hubs, dense commercial areas, or popular destination areas where the need for bikes is high. 
 """)
 
 
@@ -167,7 +167,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.markdown("### Interpretation")
 st.write("""
-The dual-axis chart compares daily trip volume with the average temperature during 2022. Trips generally increase as temperature increases. This is shown during late spring through early fall ,and then declines during the colder months. Short spikes may reflect weekend or holiday demands which can be monitored to trigger temporary rebalancing. There is a strong seasonality in Citi Bike usage.
+The dual-axis chart compares daily trip volume with the average temperature during 2022. Trips generally increase as the temperature increases. This is shown during late spring through early fall, and then declines during the colder months. Short spikes may reflect weekend or holiday demands, which can be monitored to trigger temporary rebalancing. There is a strong seasonality in Citi Bike usage.
 """)
 
 st.subheader("Monthly Citi Bike Demand vs Average Temperature")
@@ -224,8 +224,8 @@ st.plotly_chart(fig_month, use_container_width=True)
 
 st.markdown("### Interpretation")
 st.write("""
-This line chart shows the relationship of bike usage and avgerage temperature over a monthly scale in 2022.
-Bike usage increase steadily as temperature rise, peaking in the summer months when weather conditions are most favorable. As temperature declines in the fall and winter, the volume of rides decreases. 
+This line chart shows the relationship between bike usage and average temperature over a monthly scale in 2022.
+Bike usage increases steadily as the temperature rises, peaking in the summer months when weather conditions are most favorable. As temperature declines in the fall and winter, the volume of rides decreases. 
 This indicates that temperature is a key driver of demand.
 """)
 
@@ -280,7 +280,7 @@ if page == "User Type Breakdown":
     st.header("User Type Breakdown:")
     st.subheader("Member vs Casual Usage (2022)")
 
-st.image("daily.jpg", use_container_width=True)
+st.image("Dashboard Visuals/daily.jpg", use_container_width=True)
 
 st.header("User Type Breakdown:")
 st.subheader("Member vs Casual Usage (2022)")
@@ -332,7 +332,7 @@ st.markdown("### Interpretation")
 st.write("""
 This map shows where Citi Bike trips concentrate geographically in 2022. 
 The yellow points represent Citi Bike stations, and the arcs show trips between stations. The thickness of each arc indicates how many trips occurred between those locations, with thicker lines representing more popular routes.
-Trips cluster in the core service areas, and around high density and high traffic loactions. This pattern suggest demand is not evenly spread around New York City.
+Trips cluster in the core service areas, and around high density and high traffic loactions. This pattern suggests demand is not evenly spread around New York City.
 """)
 
 ### Insights & Recommendations
@@ -346,19 +346,19 @@ st.subheader("Key Insights")
 
 st.markdown("**1) Demand is Highest in Warmer Months**")
 st.write("""
-Bike usage steadily increases from winter into summer, peaking around July and August. The usage decline with the temperature in the fall and winter. This shows a strong relatioship between weather and rides.
+Bike usage steadily increases from winter into summer, peaking around July and August. The usage declines with the temperature in the fall and winter. This shows a strong relationship between weather and rides.
 """)
 
 st.markdown("**2) Weekday Riders is Stronger Than Weekends**")
 st.write("""
-Wednesday - Saturday show the highest volume of rides. Wednesdays showing the most rides during the week.
+Wednesday - Saturday show the highest volume of rides. Wednesdays show the most rides during the week.
 This suggests that Citi Bike is heavily used for commuting rather than leisure.
 """)
 
 st.markdown("**3) Members Drive the Majority of Trips**")
 st.write("""
 The User Type Breakdown shows that members use Citi Bikes the most.
-While casual riders represent a small portion, this confirms that Citi Bike is used by regular commuters.
+While casual riders represent a small portion, this confirms that regular commuters use Citi Bike.
 """)
 
 st.markdown("**4) High Activity is Concentrated in Specific Areas**")
@@ -372,17 +372,17 @@ st.header("Recommendations")
 
 st.markdown("**1) Increase Bike Availablity in the Spring & Summer**")
 st.write("""
-Since demand peaks in the warmer months , Citi Bike should add more bikes to the high demand stations
-and increase rebalancing frequency during the summer to prevent empty stations.
+Since demand peaks in the warmer months, Citi Bike should add more bikes to the high-demand stations
+and increase rebalancing frequency during the summer to prevent stations from becoming empty.
 """)
 st.markdown("**2) Prioritize High Demand Stations**")
 st.write("""
-Stations with the highest activity should recieve more bikes, faster maintenance,
+Stations with the highest activity should receive more bikes, faster maintenance,
 and restocking to ensure reliable service.
 """)
 st.markdown("**3) Focus on Commuter Routes**")
 st.write("""
-Due to the most users being memebers and weekday riders, Citi Bike should prioritizes stations near
+Due to the most users being members and weekday riders, Citi Bike should prioritize stations near
 busy streets, and transit hubs in the morning and evening rush hours.
 """)
 st.markdown("**4) Use Data to Predict Demands**")
