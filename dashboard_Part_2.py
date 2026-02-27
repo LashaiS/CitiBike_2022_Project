@@ -50,7 +50,7 @@ if page == "Introduction":
     st.header("Welcome to the Citi Bike Dashboard (2022)")
     st.subheader("Overview")
     
-    st.image("nyc_skyline.jpg", use_container_width=True)
+    st.image("Dashboard Visuals/nyc_skyline.jpg", use_container_width=True)
     
     st.write(
         """
@@ -86,7 +86,7 @@ if page == "Top Stations":
     st.header("Top Stations:")
     st.subheader(" Most Popular Citi Bike Stations")
 
-st.image("top_station.jpg", use_container_width=True)
+st.image("Dashboard Visuals/top_station.jpg", use_container_width=True)
 
 st.header("Top Stations:")
 st.subheader(" Most Popular Citi Bike Stations")   
@@ -122,7 +122,7 @@ if page == "Trip Trends":
     st.header("Trip Trends:")
     st.subheader("Daily Trips vs Temperature")
 
-st.image("trip.jpg", use_container_width=True)
+st.image("Dashboard Visuals/trip.jpg", use_container_width=True)
 
 st.header("Trip Trends:")
 st.subheader("Daily Trips vs Temperature")
@@ -316,7 +316,7 @@ Causal riders represent a smaller portion of trips, suggesting that routine tran
 if page == "Interactive Map View":
     st.header("Interactive Map View")
     
-st.image("busy.jpg", use_container_width=True)
+st.image("Dashboard Visuals/busy.jpg", use_container_width=True)
 st.header("Interactive Map View")
 
 st.subheader("Citi Bike Trip Hotspots (2022)")
@@ -339,7 +339,7 @@ Trips cluster in the core service areas, and around high density and high traffi
 if page == "Insights & Recommendations":
     st.header("Insights & Recommendations")
 
-st.image("nyc_citibikes.jpg", use_container_width=True)  
+st.image("Dashboard Visuals/nyc_citibikes.jpg", use_container_width=True)  
 
 st.header("Insights & Recommendations")
 st.subheader("Key Insights")
